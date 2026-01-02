@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Award, BookOpen, Globe, Users, Target, Lightbulb, TrendingUp, Shield } from 'lucide-react';
 
@@ -17,7 +18,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="prose prose-slate max-w-none space-y-16">
-          {/* Philosophy Section - Enhanced */}
+          {/* Philosophy Section */}
           <div className="bg-slate-50 p-10 md:p-12 border-l-8 border-slate-900 document-shadow">
             <div className="flex items-start space-x-4 mb-6">
               <Lightbulb className="text-slate-900 flex-shrink-0 mt-1" size={32} />
@@ -28,17 +29,20 @@ const About: React.FC = () => {
               기업공개(IPO), M&A, 기업가치평가 등 자본시장 전 분야에 걸친 실무 경험을 바탕으로 
               기업의 성장이 숫자로 증명되고 시장에서 인정받도록 돕습니다.
             </p>
-            <div className="bg-white p-6 rounded-sm border border-slate-200 mt-6">
-              <p className="text-slate-600 italic text-base leading-relaxed">
+            {/* 인용구 글자 크기 복구: text-lg md:text-xl */}
+            <div className="bg-white p-12 rounded-sm border border-slate-200 mt-10 shadow-sm relative overflow-hidden">
+              <p className="text-slate-500 italic text-lg md:text-xl leading-relaxed mb-10">
                 "비즈니스의 가치는 차트에 머물지 않습니다.<br/>
-                실체가 있는 성장, 숫자로 증명되는 신뢰만이<br/>
-                지속 가능한 미래를 담보합니다."
+                실체가 있는 성장, 숫자로 증명되는 신뢰만이 지속 가능한 미래를 담보합니다."
               </p>
-              <p className="text-slate-400 text-sm mt-4 text-right">— 백승룡</p>
+              <div className="flex justify-end items-center gap-2 text-slate-300">
+                <span className="w-6 h-px bg-slate-300"></span>
+                <span className="text-sm font-medium tracking-wider">백승룡</span>
+              </div>
             </div>
           </div>
 
-          {/* Core Principles - NEW */}
+          {/* Core Principles */}
           <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-10 md:p-12 rounded-sm">
             <h3 className="serif text-3xl font-bold mb-8 flex items-center">
               <Target className="mr-3" size={32} />
@@ -75,7 +79,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Vision & Expertise Grid - Enhanced */}
+          {/* Vision & Expertise Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6 p-8 bg-slate-50 border border-slate-200 rounded-sm hover:shadow-lg transition-shadow">
               <div className="flex items-center space-x-3 mb-4">
@@ -99,7 +103,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Professional Credentials - NEW */}
+          {/* Professional Credentials */}
           <div className="border-t-2 border-slate-200 pt-12">
             <div className="flex items-center space-x-3 mb-8">
               <Shield className="text-slate-900" size={32} />
@@ -230,7 +234,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Skills & Expertise - Enhanced */}
+          {/* Skills & Expertise */}
           <div className="bg-slate-900 text-white p-10 md:p-12 rounded-sm">
             <h3 className="serif text-3xl font-bold mb-8">Skills & Expertise</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
